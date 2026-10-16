@@ -31,7 +31,7 @@ public partial class CommandService
     {
         Core.Command.RegisterCommand("ws", CommandSkin);
         Core.Command.RegisterCommand("wp", CommandReload);
-        Core.Command.RegisterCommand("wp_refresh", CommandReloadBySteamId);
+        Core.Command.RegisterCommand("wp_admin", CommandReloadBySteamId);
     }
 
     private void CommandSkin(ICommandContext context)
@@ -58,7 +58,7 @@ public partial class CommandService
             !ulong.TryParse(context.Args[0], out var steamId) ||
             steamId == 0)
         {
-            context.Reply("Usage: sw_wp_refresh <SteamID64>");
+            context.Reply("Usage: sw_wp_admin <SteamID64>");
             return;
         }
 

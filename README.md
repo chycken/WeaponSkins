@@ -71,7 +71,9 @@ Leave a value empty or remove it to keep the feature available to everyone. Play
 ## Reloading saved skins
 
 Use `!wp` to reload your saved cosmetics from the configured storage provider. The command refreshes held equipment when alive; saved selections also apply to newly given weapons. Unsaved temporary selections are replaced by the stored values.
+
 Use `sw_wp_refresh <SteamID64>` from the server console to reload an online player's skins without reconnecting.
+
   
 ## Building
 
